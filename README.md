@@ -2,13 +2,13 @@
 
 Simple Javascript code for fun
 
-## Adding preview and save svg feature in Krona generate `.html` 
+## Adding preview and save svg features in Krona generate `.html` 
 
 Feature: Preview and save SVG from Krona generated `.html` file 
 
-How to: Simply insert the following script at the end of each Krona generated `.html` file, before the closing `</body>` tag to enable the feature.  The script will overwrite the `snapshot()` function, so that clicking 'snapshot' button will generate a new page in which users can preview SVG and save .svg.  Users can always go back to the original Korana generate `.html` by refreshing the browser.
+How to: Simply insert the following script at the end of each Krona generated `.html` file, before the closing `</body>` tag to enable the features.  The script will overwrite the `snapshot()` function, so that clicking 'snapshot' button will generate a new page in which users can preview SVG and save as .svg.  Users can always go back to the original Korana generate `.html` by refreshing the browser.
 
-Example: You can check out the [example here]()
+Example: You can check out the [example here](https://liao0015.github.io/javascript-code-snippets/)
 
 The script:
 ```html
