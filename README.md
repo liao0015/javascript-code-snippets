@@ -1,18 +1,19 @@
 # javascript-code-snippets
 
-## Krona generate svg 
+## Adding preview and save svg feature in Korana generate `.html` 
 
-[Link to Krona](https://github.com/marbl/Krona)
+Feature: Preview and save SVG from Krona generated `.html` file 
 
-Copy and paste the code at the end of each html file before the end `</body>` tag
+How to: Insert the following script at the end of each html file, before the end `</body>` tag to add the feature.  The script will overwrite the `snapshot()` function, so that clicking 'snapshot' button will generate a new page in which users can preview SVG and save .svg.  Users can always go back to the original Korana generate `.html` by refreshing the browser.
 
+The script:
 ```html
 	<script type="text/javascript">
 		function snapshot()
 		{
 			var patternWidth = fontSize * .6;//radius / 50;
 
-			//overwrite default body style
+			//overwrite the default body style
 			document.body.setAttribute("style", "overflow: auto; width: 100%");
 
 			svg = svgHeader();
@@ -39,7 +40,7 @@ Copy and paste the code at the end of each html file before the end `</body>` ta
 			
 			svg += svgFooter();
 
-		
+			//replace the old HTML
 			document.body.innerHTML = "<!DOCTYPE html><html><body></body></html>";
 
 			let btn = document.createElement("div");
@@ -51,7 +52,7 @@ Copy and paste the code at the end of each html file before the end `</body>` ta
 			}, false);
 
 			let a = document.createElement("div");
-			a.innerHTML = svg; //as svg is string, can NOT appendChild()
+			a.innerHTML = svg; //as svg is string, not a node, can NOT appendChild()
 			let codeDiv = document.createElement("div");
 			let code = document.createElement("code");
 			code.setAttribute("id", "code");
@@ -77,3 +78,5 @@ Copy and paste the code at the end of each html file before the end `</body>` ta
 		}
 	</script>
 ```
+
+[Reference link to Krona](https://github.com/marbl/Krona)
