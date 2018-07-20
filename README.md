@@ -86,3 +86,5 @@ The script:
 ```
 
 [Reference link to Krona](https://github.com/marbl/Krona)
+
+## simple ML using brain.js

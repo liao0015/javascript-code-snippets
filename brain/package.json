@@ -1,0 +1,19 @@
+{
+  "name": "brain",
+  "version": "1.0.0",
+  "description": "ML using brain.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "BO LIAO",
+  "license": "MIT",
+  "dependencies": {
+    "brain.js": "^1.2.4",
+    "lodash": "^4.17.10",
+    "webpack": "^4.16.1"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.1.0"
+  }
+}
