@@ -39,7 +39,9 @@
 // }
 // 
 // 
-const brain = require('brain.js');
+// 
+// const brain = require('brain.js');
+import brain from 'brain.js';
 
 var net = new brain.NeuralNetwork();
 

@@ -88,3 +88,16 @@ The script:
 [Reference link to Krona](https://github.com/marbl/Krona)
 
 ## simple ML using brain.js
+
+very basic JS packaging management using webpack
+
+```shell
+yarn add brain.js
+yarn add webpack
+yarn add -D webpack-cli
+
+//compile using webpack (index.js --> main.js)
+npx webpack
+
+//brain.js only works in Node
+```
